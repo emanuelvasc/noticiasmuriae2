@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Muriaé Notícias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Controlos de Estado (Pure CSS) -->
+    <input type="checkbox" id="theme-toggle" class="state-toggle">
+    <input type="checkbox" id="menu-toggle" class="state-toggle">
+
+    <!-- Cabeçalho Principal -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <span class="date-time">Quinta-feira, 12 de Novembro de 2026</span>
+                <div class="top-actions">
+                    <label for="theme-toggle" class="theme-switch" title="Alternar Modo Escuro">
+                        <span class="icon-sun">☀️ Claro</span>
+                        <span class="icon-moon">🌙 Escuro</span>
+                    </label>
+                    <span class="location">Muriaé - MG</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container main-header">
+            <a href="index.html" class="logo">
+                <span class="logo-red">Muriaé</span>Notícias
+            </a>
+            
+            <form class="search-form" action="index.html" method="GET">
+                <input type="text" placeholder="Buscar notícias em Muriaé..." aria-label="Buscar notícias">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <!-- Menu Principal Exposto -->
+        <nav class="nav-bar">
+            <div class="container">
+                <label for="menu-toggle" class="mobile-btn">☰ Menu de Navegação</label>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-label">Início</a></li>
+                    <li><a href="index.html" class="nav-label">Cidade</a></li>
+                    <li><a href="index.html" class="nav-label">Polícia</a></li>
+                    <li><a href="index.html" class="nav-label">Esportes</a></li>
+                    <li><a href="index.html" class="nav-label">Cultura</a></li>
+                    <li><a href="index.html" class="nav-label">Eventos</a></li>
+                    <li class="nav-divider" aria-hidden="true"></li>
+                    <li><a href="nossa-historia.html" class="nav-label">Nossa História</a></li>
+                    <li><a href="codigo-etica.html" class="nav-label">Código de Ética</a></li>
+                    <li><a href="contato.html" class="nav-label active">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container page-container">
+        
+        <nav class="breadcrumb" aria-label="Navegação estrutural">
+            <a href="index.html">Início</a> <span>/</span> <strong>Contato</strong>
+        </nav>
+
+        <section class="page-header">
+            <span class="category-badge">Atendimento ao Leitor</span>
+            <h1>Fale Conosco</h1>
+            <p>Envie sua sugestão de pauta, denúncia comunitária, solicitação de errata ou proposta comercial diretamente para nossa equipe em Muriaé.</p>
+        </section>
+
+        <section class="contact-grid">
+            
+            <div class="contact-form-card">
+                <h2>Envie sua Mensagem</h2>
+                <form class="contact-form" action="#mensagem-enviada" method="GET">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone / WhatsApp</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(32) 99999-9999">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assunto">Assunto *</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="" disabled selected>Selecione o motivo do contato...</option>
+                            <option value="pauta">Sugestão de Pauta / Fato no Bairro</option>
+                            <option value="errata">Solicitação de Errata / Direito de Resposta</option>
+                            <option value="comercial">Anuncie no Portal (Comercial)</option>
+                            <option value="outros">Outros Assuntos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem *</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva os detalhes da sua solicitação, local e data do ocorrido..." required></textarea>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="privacidade" required>
+                        <label for="privacidade">Concordo com o tratamento dos meus dados para retorno deste contato, conforme o Código de Ética do portal.</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <aside class="contact-info-wrapper">
+                <div class="contact-info-card">
+                    <h3>Redação e Jornalismo</h3>
+                    <p>Tem uma notícia acontecendo agora no seu bairro em Muriaé?</p>
+                    <ul class="info-list">
+                        <li><strong>E-mail:</strong> redacao@muriaenoticias.com.br</li>
+                        <li><strong>Plantão WhatsApp:</strong> (32) 98800-2026</li>
+                    </ul>
+                </div>
+
+                <div class="contact-info-card">
+                    <h3>Departamento Comercial</h3>
+                    <p>Divulgue sua empresa ou evento para milhares de leitores da região.</p>
+                    <ul class="info-list">
+                        <li><strong>E-mail:</strong> comercial@muriaenoticias.com.br</li>
+                        <li><strong>Telefone:</strong> (32) 3721-0000</li>
+                    </ul>
+                </div>
+
+                <div class="contact-info-card">
+                    <h3>Endereço e Horário</h3>
+                    <ul class="info-list">
+                        <li><strong>Sede:</strong> Rua Dr. Afonso Canêdo, Centro — Muriaé - MG, CEP 36880-000</li>
+                        <li><strong>Atendimento Presencial:</strong> Segunda a Sexta, das 08h às 18h</li>
+                        <li><strong>Plantão Digital:</strong> Todos os dias, 24 horas</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </section>
+
+    </main>
+
+    <!-- Modal de Confirmação em Pure CSS (:target) -->
+    <div id="mensagem-enviada" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <span class="category-badge">Sucesso</span>
+            <h2>Mensagem Recebida!</h2>
+            <p class="modal-meta">Protocolo registrado em Muriaé - MG</p>
+            <p>Obrigado por entrar em contato com o <strong>Muriaé Notícias</strong>. Sua mensagem foi encaminhada para nossa equipe responsável e responderemos o mais breve possível.</p>
+            <a href="#" class="btn-close-modal">Voltar para a Página</a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-red">Muriaé</span>Notícias
+                </a>
+                <p>O seu portal diário de informação local. Jornalismo transparente com cobertura completa dos principais fatos de Muriaé e região.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Categorias</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Cidade</a></li>
+                    <li><a href="index.html">Polícia</a></li>
+                    <li><a href="index.html">Esportes</a></li>
+                    <li><a href="index.html">Cultura</a></li>
+                    <li><a href="index.html">Eventos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Institucional</h4>
+                <ul class="footer-links">
+                    <li><a href="nossa-historia.html">Nossa História</a></li>
+                    <li><a href="codigo-etica.html">Código de Ética</a></li>
+                    <li><a href="contato.html" class="active-footer-link">Contato / Envie sua Pauta</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Newsletter</h4>
+                <p>Receba os destaques diários de Muriaé diretamente no seu e-mail.</p>
+                <form class="newsletter-form" action="#mensagem-enviada" method="GET">
+                    <input type="email" placeholder="Seu e-mail..." required aria-label="E-mail para assinatura da newsletter">
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Muriaé Notícias. Todos os direitos reservados. Muriaé - Minas Gerais.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

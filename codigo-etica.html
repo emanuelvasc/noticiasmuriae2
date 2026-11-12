@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de Ética | Muriaé Notícias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Controlos de Estado (Pure CSS) -->
+    <input type="checkbox" id="theme-toggle" class="state-toggle">
+    <input type="checkbox" id="menu-toggle" class="state-toggle">
+
+    <!-- Cabeçalho Principal -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <span class="date-time">Quinta-feira, 12 de Novembro de 2026</span>
+                <div class="top-actions">
+                    <label for="theme-toggle" class="theme-switch" title="Alternar Modo Escuro">
+                        <span class="icon-sun">☀️ Claro</span>
+                        <span class="icon-moon">🌙 Escuro</span>
+                    </label>
+                    <span class="location">Muriaé - MG</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container main-header">
+            <a href="index.html" class="logo">
+                <span class="logo-red">Muriaé</span>Notícias
+            </a>
+            
+            <form class="search-form" action="index.html" method="GET">
+                <input type="text" placeholder="Buscar notícias em Muriaé..." aria-label="Buscar notícias">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <!-- Menu Principal Exposto -->
+        <nav class="nav-bar">
+            <div class="container">
+                <label for="menu-toggle" class="mobile-btn">☰ Menu de Navegação</label>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-label">Início</a></li>
+                    <li><a href="index.html" class="nav-label">Cidade</a></li>
+                    <li><a href="index.html" class="nav-label">Polícia</a></li>
+                    <li><a href="index.html" class="nav-label">Esportes</a></li>
+                    <li><a href="index.html" class="nav-label">Cultura</a></li>
+                    <li><a href="index.html" class="nav-label">Eventos</a></li>
+                    <li class="nav-divider" aria-hidden="true"></li>
+                    <li><a href="nossa-historia.html" class="nav-label">Nossa História</a></li>
+                    <li><a href="codigo-etica.html" class="nav-label active">Código de Ética</a></li>
+                    <li><a href="contato.html" class="nav-label">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container page-container">
+        
+        <nav class="breadcrumb" aria-label="Navegação estrutural">
+            <a href="index.html">Início</a> <span>/</span> <strong>Código de Ética</strong>
+        </nav>
+
+        <section class="page-header">
+            <span class="category-badge">Transparência Editorial</span>
+            <h1>Código de Ética e Conduta Jornalística</h1>
+            <p>Diretrizes fundamentais que orientam a apuração, redação, publicação e correção de conteúdos no portal Muriaé Notícias.</p>
+        </section>
+
+        <section class="ethics-list">
+            <article class="ethics-card">
+                <div class="ethics-number">01</div>
+                <div class="ethics-body">
+                    <h2>Compromisso com a Verdade e Checagem de Fatos</h2>
+                    <p>Nenhuma informação é publicada sem verificação prévia. Priorizamos fontes primárias, documentos oficiais, registros públicos e confirmação cruzada antes de divulgar qualquer ocorrência em Muriaé e região, combatendo ativamente a desinformação.</p>
+                </div>
+            </article>
+
+            <article class="ethics-card">
+                <div class="ethics-number">02</div>
+                <div class="ethics-body">
+                    <h2>Independência Editorial e Contraditório</h2>
+                    <p>Mantemos total autonomia frente a interesses políticos, partidários, econômicos ou institucionais. Em matérias que envolvam controvérsias ou acusações, garantimos sempre o espaço para que todas as partes citadas apresentem suas versões.</p>
+                </div>
+            </article>
+
+            <article class="ethics-card">
+                <div class="ethics-number">03</div>
+                <div class="ethics-body">
+                    <h2>Direito de Resposta e Política de Erratas</h2>
+                    <p>Reconhecemos que o jornalismo está sujeito a falhas humanas. Sempre que um erro factual for identificado, a correção será feita de forma imediata, transparente e visível no próprio texto publicado, assegurando o pleno direito de resposta.</p>
+                </div>
+            </article>
+
+            <article class="ethics-card">
+                <div class="ethics-number">04</div>
+                <div class="ethics-body">
+                    <h2>Sigilo da Fonte e Proteção à Privacidade</h2>
+                    <p>Respeitamos o direito constitucional ao sigilo da fonte sempre que necessário para proteger denunciantes e cidadãos. Evitamos a exposição indevida de vítimas, menores de idade e pessoas em situação de vulnerabilidade, especialmente em coberturas policiais.</p>
+                </div>
+            </article>
+
+            <article class="ethics-card">
+                <div class="ethics-number">05</div>
+                <div class="ethics-body">
+                    <h2>Distinção entre Conteúdo Jornalístico e Publicitário</h2>
+                    <p>Todo material patrocinado, informe publicitário ou conteúdo comercial publicado no Muriaé Notícias é obrigatoriamente identificado como tal, não interferindo na linha editorial das reportagens.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="faq-section">
+            <h2 class="section-title">Perguntas Frequentes sobre Nossa Conduta</h2>
+            
+            <details class="ethics-faq" open>
+                <summary>Como solicitar a correção de uma informação publicada?</summary>
+                <p>Qualquer cidadão ou instituição pode solicitar revisão ou direito de resposta através da nossa <a href="contato.html" class="inline-link">página de Contato</a>, selecionando o assunto "Errata / Direito de Resposta" e informando o link da matéria.</p>
+            </details>
+
+            <details class="ethics-faq">
+                <summary>Como o portal trata informações enviadas por leitores?</summary>
+                <p>Fotos, vídeos e relatos enviados pela comunidade passam pela triagem da nossa redação para confirmar data, local e veracidade antes de qualquer publicação.</p>
+            </details>
+
+            <details class="ethics-faq">
+                <summary>O Muriaé Notícias aceita artigos de opinião?</summary>
+                <p>Sim. Colunas e artigos assinados refletem exclusivamente a opinião de seus autores e são identificados na editoria de Opinião, mantendo o respeito à legislação vigente.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-red">Muriaé</span>Notícias
+                </a>
+                <p>O seu portal diário de informação local. Jornalismo transparente com cobertura completa dos principais fatos de Muriaé e região.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Categorias</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Cidade</a></li>
+                    <li><a href="index.html">Polícia</a></li>
+                    <li><a href="index.html">Esportes</a></li>
+                    <li><a href="index.html">Cultura</a></li>
+                    <li><a href="index.html">Eventos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Institucional</h4>
+                <ul class="footer-links">
+                    <li><a href="nossa-historia.html">Nossa História</a></li>
+                    <li><a href="codigo-etica.html" class="active-footer-link">Código de Ética</a></li>
+                    <li><a href="contato.html">Contato / Envie sua Pauta</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Newsletter</h4>
+                <p>Receba os destaques diários de Muriaé diretamente no seu e-mail.</p>
+                <form class="newsletter-form" action="contato.html#mensagem-enviada" method="GET">
+                    <input type="email" placeholder="Seu e-mail..." required aria-label="E-mail para assinatura da newsletter">
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Muriaé Notícias. Todos os direitos reservados. Muriaé - Minas Gerais.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

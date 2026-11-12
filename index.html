@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- Inputs Invisíveis de Controlo (Hack de Estado em Pure CSS) -->
+    <!-- Controlos de Estado (Pure CSS) -->
     <input type="checkbox" id="theme-toggle" class="state-toggle">
     <input type="checkbox" id="menu-toggle" class="state-toggle">
     
@@ -24,7 +24,7 @@
     <header class="header">
         <div class="top-bar">
             <div class="container top-bar-content">
-                <span class="date-time">Quarta-feira, 11 de Novembro de 2026</span>
+                <span class="date-time">Quinta-feira, 12 de Novembro de 2026</span>
                 <div class="top-actions">
                     <label for="theme-toggle" class="theme-switch" title="Alternar Modo Escuro">
                         <span class="icon-sun">☀️ Claro</span>
@@ -36,7 +36,7 @@
         </div>
         
         <div class="container main-header">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <span class="logo-red">Muriaé</span>Notícias
             </a>
             
@@ -54,10 +54,10 @@
             </form>
         </div>
 
-        <!-- Navegação com Filtros em CSS -->
+        <!-- Menu Principal Exposto (Categorias + Páginas Institucionais) -->
         <nav class="nav-bar">
             <div class="container">
-                <label for="menu-toggle" class="mobile-btn">☰ Menu Categorias</label>
+                <label for="menu-toggle" class="mobile-btn">☰ Menu de Navegação</label>
                 <ul class="nav-list">
                     <li><label for="filter-all" class="nav-label lbl-all">Início</label></li>
                     <li><label for="filter-cidade" class="nav-label lbl-cidade">Cidade</label></li>
@@ -65,6 +65,10 @@
                     <li><label for="filter-esportes" class="nav-label lbl-esportes">Esportes</label></li>
                     <li><label for="filter-cultura" class="nav-label lbl-cultura">Cultura</label></li>
                     <li><label for="filter-eventos" class="nav-label lbl-eventos">Eventos</label></li>
+                    <li class="nav-divider" aria-hidden="true"></li>
+                    <li><a href="nossa-historia.html" class="nav-label">Nossa História</a></li>
+                    <li><a href="codigo-etica.html" class="nav-label">Código de Ética</a></li>
+                    <li><a href="contato.html" class="nav-label">Contato</a></li>
                 </ul>
             </div>
         </nav>
@@ -214,7 +218,7 @@
             <p class="modal-meta">Publicado em 11 de Novembro de 2026 | Redação Muriaé Notícias</p>
             <img src="https://anoticiaonline.com.br/site/wp-content/uploads/2019/06/f4278c8d-bc53-431e-97df-5e0c9656e039.jpg" alt="Lagoa da Gávea">
             <p>As obras na Lagoa da Gávea representam um dos maiores investimentos urbanos em Muriaé nos últimos anos. As intervenções visam solucionar os problemas históricos de drenagem em períodos de fortes chuvas e revitalizar todo o Parque da Lagoa com pistas de caminhada, ciclovias e iluminação em LED.</p>
-            <p>O prefeito ressaltou a importância da obra para o turismo e o bem-estar dos moradores locais.</p>
+            <p>O executivo municipal ressaltou a importância da obra para o turismo, a prática esportiva e o bem-estar dos moradores locais.</p>
             <a href="#" class="btn-close-modal">Fechar Notícia</a>
         </div>
     </div>
@@ -224,9 +228,9 @@
             <a href="#" class="modal-close">&times;</a>
             <span class="category-badge">Polícia</span>
             <h2>Polícia Militar Reforça Patrulhamento no Centro Comercial</h2>
-            <p class="modal-meta">Publicado em 11 de Novembro de 2026</p>
+            <p class="modal-meta">Publicado em 11 de Novembro de 2026 | Redação Muriaé Notícias</p>
             <img src="https://cdn.autopapo.com.br/box/uploads/2025/02/14161727/viaturas-da-policia-militar-de-minas-gerais-ganham-nova-identidade-visual-.png" alt="Polícia Militar">
-            <p>Com o objetivo de aumentar a segurança de pedestres e comerciantes no centro de Muriaé, a Polícia Militar deu início a uma operação intensiva com pontos fixos de patrulha e rondas de motocicletas.</p>
+            <p>Com o objetivo de aumentar a segurança de pedestres e comerciantes no centro de Muriaé, a Polícia Militar deu início a uma operação intensiva com pontos fixos de patrulha nas ruas principais e rondas preventivas de motocicletas.</p>
             <a href="#" class="btn-close-modal">Fechar Notícia</a>
         </div>
     </div>
@@ -236,9 +240,57 @@
             <a href="#" class="modal-close">&times;</a>
             <span class="category-badge">Esportes</span>
             <h2>Nacional de Muriaé Garante Vaga nas Semifinais</h2>
-            <p class="modal-meta">Publicado em 10 de Novembro de 2026</p>
+            <p class="modal-meta">Publicado em 10 de Novembro de 2026 | Redação Muriaé Notícias</p>
             <img src="https://www.guiamuriae.com.br/wp-content/uploads/2022/05/Estadio-Soares-de-Azevedo-em-Muriae-Area-Foto-Brunno-Estevao-B7-Filmes.jpg" alt="Estádio Soares de Azevedo">
-            <p>O Nacional de Muriaé deu um grande show de futebol perante a sua torcida no Estádio Soares de Azevedo e garantiu a classificação para a semifinal do torneio regional.</p>
+            <p>O Nacional de Muriaé apresentou grande desempenho diante de sua torcida no Estádio Soares de Azevedo e garantiu a classificação para a semifinal do torneio regional após marcar dois gols na etapa complementar.</p>
+            <a href="#" class="btn-close-modal">Fechar Notícia</a>
+        </div>
+    </div>
+
+    <div id="modal-3" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <span class="category-badge">Cultura</span>
+            <h2>Praça João Pinheiro Recebe Mostra Cultural de Artistas Locais neste Fim de Semana</h2>
+            <p class="modal-meta">Publicado em 10 de Novembro de 2026 | Redação Muriaé Notícias</p>
+            <img src="https://www.guiamuriae.com.br/wp-content/uploads/2021/09/Praca-Joao-Pinheiro-Foto-PMM.jpg" alt="Praça João Pinheiro em Muriaé">
+            <p>A Praça João Pinheiro será palco de apresentações musicais, exposição de artesanato muriaense, gastronomia típica e atividades recreativas gratuitas voltadas para toda a família durante sábado e domingo.</p>
+            <a href="#" class="btn-close-modal">Fechar Notícia</a>
+        </div>
+    </div>
+
+    <div id="modal-4" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <span class="category-badge">Eventos</span>
+            <h2>Sindicato Rural Divulga Programação Oficial da Exposição Agropecuária</h2>
+            <p class="modal-meta">Publicado em 09 de Novembro de 2026 | Redação Muriaé Notícias</p>
+            <img src="https://zinecultural.com/Repositorio/Upload/Imagens//2023/agenda/08/expo%20muriae%201.webp" alt="Exposição Agropecuária de Muriaé">
+            <p>A tradicional Exposição Agropecuária de Muriaé contará com concurso leiteiro, exposição de máquinas agrícolas, rodadas de negócios para produtores da Zona da Mata e shows musicais no Parque de Exposições Lael Varella.</p>
+            <a href="#" class="btn-close-modal">Fechar Notícia</a>
+        </div>
+    </div>
+
+    <div id="modal-5" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <span class="category-badge">Cidade</span>
+            <h2>Nova Iluminação em LED É Concluída nos Bairros Porto e Barra</h2>
+            <p class="modal-meta">Publicado em 08 de Novembro de 2026 | Redação Muriaé Notícias</p>
+            <img src="https://s2-g1.glbimg.com/ftvdMRlicIFRkrIs3ezTFG2kNzw=/0x0:1432x835/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/v/P/M5MDunRiyrhRcL2aGDhg/captura-de-tela-2020-04-21-as-13.48.20.png" alt="Bairro da Barra em Muriaé">
+            <p>As equipes de manutenção urbana finalizaram a instalação das novas luminárias em LED nas principais vias dos bairros Porto e Barra, proporcionando maior luminosidade noturna, eficiência energética e segurança viária.</p>
+            <a href="#" class="btn-close-modal">Fechar Notícia</a>
+        </div>
+    </div>
+
+    <div id="modal-6" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close">&times;</a>
+            <span class="category-badge">Esportes</span>
+            <h2>Atletas de Muriaé Conquistam Pódio em Desafio Regional de Ciclismo</h2>
+            <p class="modal-meta">Publicado em 07 de Novembro de 2026 | Redação Muriaé Notícias</p>
+            <img src="https://anoticiaonline.com.br/site/wp-content/uploads/2020/12/WhatsApp-Image-2020-12-11-at-08.38.02.jpeg" alt="Ciclismo em Muriaé">
+            <p>Representando equipes de Muriaé, os ciclistas locais subiram ao pódio nas categorias Elite, Master e Sub-30 em percurso de mountain bike realizado na região da Zona da Mata Mineira.</p>
             <a href="#" class="btn-close-modal">Fechar Notícia</a>
         </div>
     </div>
@@ -247,7 +299,7 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-col">
-                <a href="#" class="logo footer-logo">
+                <a href="index.html" class="logo footer-logo">
                     <span class="logo-red">Muriaé</span>Notícias
                 </a>
                 <p>O seu portal diário de informação local. Jornalismo transparente com cobertura completa dos principais fatos de Muriaé e região.</p>
@@ -256,28 +308,27 @@
             <div class="footer-col">
                 <h4 class="footer-heading">Categorias</h4>
                 <ul class="footer-links">
-                    <li><label for="filter-cidade" class="nav-label">Cidade</label></li>
-                    <li><label for="filter-policia" class="nav-label">Polícia</label></li>
-                    <li><label for="filter-esportes" class="nav-label">Esportes</label></li>
-                    <li><label for="filter-cultura" class="nav-label">Cultura</label></li>
-                    <li><label for="filter-eventos" class="nav-label">Eventos</label></li>
+                    <li><label for="filter-cidade">Cidade</label></li>
+                    <li><label for="filter-policia">Polícia</label></li>
+                    <li><label for="filter-esportes">Esportes</label></li>
+                    <li><label for="filter-cultura">Cultura</label></li>
+                    <li><label for="filter-eventos">Eventos</label></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h4 class="footer-heading">Links Rápidos</h4>
+                <h4 class="footer-heading">Institucional</h4>
                 <ul class="footer-links">
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Expediente</a></li>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="nossa-historia.html">Nossa História</a></li>
+                    <li><a href="codigo-etica.html">Código de Ética</a></li>
+                    <li><a href="contato.html">Contato / Envie sua Pauta</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h4 class="footer-heading">Newsletter</h4>
                 <p>Receba os destaques diários de Muriaé diretamente no seu e-mail.</p>
-                <form class="newsletter-form" action="#" method="GET">
+                <form class="newsletter-form" action="contato.html#mensagem-enviada" method="GET">
                     <input type="email" placeholder="Seu e-mail..." required aria-label="E-mail para assinatura da newsletter">
                     <button type="submit">Inscrever</button>
                 </form>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História | Muriaé Notícias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Controlos de Estado (Pure CSS) -->
+    <input type="checkbox" id="theme-toggle" class="state-toggle">
+    <input type="checkbox" id="menu-toggle" class="state-toggle">
+
+    <!-- Cabeçalho Principal -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <span class="date-time">Quinta-feira, 12 de Novembro de 2026</span>
+                <div class="top-actions">
+                    <label for="theme-toggle" class="theme-switch" title="Alternar Modo Escuro">
+                        <span class="icon-sun">☀️ Claro</span>
+                        <span class="icon-moon">🌙 Escuro</span>
+                    </label>
+                    <span class="location">Muriaé - MG</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container main-header">
+            <a href="index.html" class="logo">
+                <span class="logo-red">Muriaé</span>Notícias
+            </a>
+            
+            <form class="search-form" action="index.html" method="GET">
+                <input type="text" placeholder="Buscar notícias em Muriaé..." aria-label="Buscar notícias">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <!-- Menu Principal Exposto -->
+        <nav class="nav-bar">
+            <div class="container">
+                <label for="menu-toggle" class="mobile-btn">☰ Menu de Navegação</label>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-label">Início</a></li>
+                    <li><a href="index.html" class="nav-label">Cidade</a></li>
+                    <li><a href="index.html" class="nav-label">Polícia</a></li>
+                    <li><a href="index.html" class="nav-label">Esportes</a></li>
+                    <li><a href="index.html" class="nav-label">Cultura</a></li>
+                    <li><a href="index.html" class="nav-label">Eventos</a></li>
+                    <li class="nav-divider" aria-hidden="true"></li>
+                    <li><a href="nossa-historia.html" class="nav-label active">Nossa História</a></li>
+                    <li><a href="codigo-etica.html" class="nav-label">Código de Ética</a></li>
+                    <li><a href="contato.html" class="nav-label">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container page-container">
+        
+        <nav class="breadcrumb" aria-label="Navegação estrutural">
+            <a href="index.html">Início</a> <span>/</span> <strong>Nossa História</strong>
+        </nav>
+
+        <section class="page-header">
+            <span class="category-badge">Institucional</span>
+            <h1>Nossa História</h1>
+            <p>Conheça a trajetória do portal que se tornou referência em informação ágil, independente e comprometida com o povo de Muriaé e da Zona da Mata Mineira.</p>
+        </section>
+
+        <section class="institutional-grid">
+            <div class="institutional-card">
+                <h2>Jornalismo com Raízes em Muriaé</h2>
+                <p>O <strong>Muriaé Notícias</strong> nasceu da necessidade de oferecer à população muriaense um canal de comunicação moderno, direto e rigoroso na apuração dos fatos. Desde a nossa fundação, acompanhamos de perto o crescimento urbano, econômico, cultural e esportivo do município.</p>
+                <p>Da cobertura das decisões no Centro Administrativo às manifestações culturais na Praça João Pinheiro, passando pelos gramados do Estádio Soares de Azevedo e pelas comunidades rurais dos distritos, nossa redação trabalha diariamente para conectar o cidadão ao que realmente importa.</p>
+            </div>
+
+            <div class="institutional-highlight">
+                <div class="stat-item">
+                    <span class="stat-number">+10</span>
+                    <span class="stat-label">Anos informando Muriaé e região</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">Cobertura contínua dos fatos locais</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Compromisso com a apuração local</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="pillars-section">
+            <h2 class="section-title">Nossos Pilares</h2>
+            <div class="pillars-grid">
+                <article class="pillar-card">
+                    <h3>Missão</h3>
+                    <p>Levar informação precisa, verificada e acessível aos moradores de Muriaé, fortalecendo a cidadania e o debate público responsável.</p>
+                </article>
+                <article class="pillar-card">
+                    <h3>Visão</h3>
+                    <p>Ser o principal ecossistema de jornalismo digital da Zona da Mata Mineira, reconhecido pela credibilidade e inovação editorial.</p>
+                </article>
+                <article class="pillar-card">
+                    <h3>Valores</h3>
+                    <p>Ética jornalística, imparcialidade, respeito ao leitor, transparência nas fontes e valorização da identidade muriaense.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2 class="section-title">Linha do Tempo</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-year">2016</span>
+                    <div class="timeline-content">
+                        <h3>Fundação do Portal</h3>
+                        <p>Início das atividades em Muriaé com foco na cobertura diária de serviços públicos, trânsito e segurança urbana.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2019</span>
+                    <div class="timeline-content">
+                        <h3>Expansão para a Zona da Mata</h3>
+                        <p>Ampliação da equipe de reportagem para cobrir acontecimentos dos distritos de Boa Família, Vermelho, Belisário e municípios vizinhos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2023</span>
+                    <div class="timeline-content">
+                        <h3>Modernização Digital</h3>
+                        <p>Lançamento de nova plataforma responsiva e criação das editorias fixas de Cultura, Eventos e Esportes Locais.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2026</span>
+                    <div class="timeline-content">
+                        <h3>Consolidação e Novo Design System</h3>
+                        <p>Reestruturação completa da experiência de leitura com foco em acessibilidade, alto contraste e velocidade de carregamento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-red">Muriaé</span>Notícias
+                </a>
+                <p>O seu portal diário de informação local. Jornalismo transparente com cobertura completa dos principais fatos de Muriaé e região.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Categorias</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Cidade</a></li>
+                    <li><a href="index.html">Polícia</a></li>
+                    <li><a href="index.html">Esportes</a></li>
+                    <li><a href="index.html">Cultura</a></li>
+                    <li><a href="index.html">Eventos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Institucional</h4>
+                <ul class="footer-links">
+                    <li><a href="nossa-historia.html" class="active-footer-link">Nossa História</a></li>
+                    <li><a href="codigo-etica.html">Código de Ética</a></li>
+                    <li><a href="contato.html">Contato / Envie sua Pauta</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Newsletter</h4>
+                <p>Receba os destaques diários de Muriaé diretamente no seu e-mail.</p>
+                <form class="newsletter-form" action="contato.html#mensagem-enviada" method="GET">
+                    <input type="email" placeholder="Seu e-mail..." required aria-label="E-mail para assinatura da newsletter">
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Muriaé Notícias. Todos os direitos reservados. Muriaé - Minas Gerais.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

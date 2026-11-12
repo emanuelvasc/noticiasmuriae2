@@ -98,7 +98,7 @@ body:has(#theme-toggle:checked) {
 .theme-switch {
     cursor: pointer;
     background-color: var(--color-gray-dark);
-    color: var(--color-white);
+    color: #ffffff;
     padding: 3px 10px;
     border-radius: var(--border-radius-sm);
     font-size: var(--font-size-xs);
@@ -208,23 +208,22 @@ body:has(#theme-toggle:checked) .icon-sun { display: inline; }
 }
 
 .nav-label:hover {
-    background-color: var(--color-gray-dark);
+    background-color: #2c2c2c;
     border-bottom-color: var(--color-primary);
 }
 
-/* Indicação Visual do Filtro Ativo */
 body:has(#filter-all:checked) .lbl-all,
 body:has(#filter-cidade:checked) .lbl-cidade,
 body:has(#filter-policia:checked) .lbl-policia,
 body:has(#filter-esportes:checked) .lbl-esportes,
 body:has(#filter-cultura:checked) .lbl-cultura,
 body:has(#filter-eventos:checked) .lbl-eventos {
-    background-color: var(--color-dark);
+    background-color: #121212;
     border-bottom-color: var(--color-primary);
 }
 
 /* ==========================================================================
-   5. LÓGICA DE FILTRAGEM EM PURE CSS (:has)
+   5. Lógica de Filtragem em Pure CSS (:has)
    ========================================================================== */
 body:has(#filter-cidade:checked) article:not(.cidade),
 body:has(#filter-policia:checked) article:not(.policia),
@@ -235,7 +234,7 @@ body:has(#filter-eventos:checked) article:not(.eventos) {
 }
 
 /* ==========================================================================
-   6. Componentes: Badge, Hero & News Cards
+   6. Componentes: Badge, Hero & News Cards (Home)
    ========================================================================== */
 .category-badge {
     display: inline-block;
@@ -331,6 +330,7 @@ body:has(#filter-eventos:checked) article:not(.eventos) {
     color: var(--color-black);
     text-transform: uppercase;
     margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-xs);
     border-bottom: 2px solid var(--color-black);
     position: relative;
 }
@@ -409,7 +409,396 @@ body:has(#filter-eventos:checked) article:not(.eventos) {
 }
 
 /* ==========================================================================
-   7. MODAL DE NOTÍCIA COMPLETA EM PURE CSS (:target)
+   7. Páginas Institucionais (Nossa História, Ética e Contato)
+   ========================================================================== */
+.page-container {
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.breadcrumb {
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-medium);
+    margin-bottom: var(--spacing-md);
+}
+
+.breadcrumb a:hover {
+    color: var(--color-primary);
+}
+
+.breadcrumb span {
+    margin: 0 var(--spacing-xs);
+}
+
+.page-header {
+    background-color: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    border-left: 5px solid var(--color-primary);
+    box-shadow: var(--box-shadow);
+    margin-bottom: var(--spacing-xl);
+}
+
+.page-header h1 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-black);
+    margin: var(--spacing-sm) 0;
+}
+
+.page-header p {
+    color: var(--color-gray-dark);
+    max-width: 750px;
+}
+
+/* Nossa História: Grid e Destaques */
+.institutional-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.institutional-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow);
+}
+
+.institutional-card h2 {
+    color: var(--color-black);
+    margin-bottom: var(--spacing-md);
+}
+
+.institutional-card p {
+    color: var(--color-gray-dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.institutional-highlight {
+    background-color: #000000;
+    color: #ffffff;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: var(--spacing-md);
+    border-top: 4px solid var(--color-primary);
+}
+
+.stat-item {
+    border-bottom: 1px solid #2c2c2c;
+    padding-bottom: var(--spacing-sm);
+}
+
+.stat-item:last-child {
+    border-bottom: none;
+}
+
+.stat-number {
+    display: block;
+    font-size: var(--font-size-2xl);
+    font-weight: 800;
+    color: var(--color-primary);
+}
+
+.stat-label {
+    font-size: var(--font-size-sm);
+    color: #e0e0e0;
+}
+
+/* Pilares (Missão, Visão, Valores) */
+.pillars-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.pillar-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow);
+    border-top: 3px solid var(--color-black);
+}
+
+.pillar-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    font-size: var(--font-size-base);
+}
+
+.pillar-card p {
+    color: var(--color-gray-dark);
+    font-size: var(--font-size-sm);
+}
+
+/* Linha do Tempo */
+.timeline {
+    border-left: 3px solid var(--color-primary);
+    padding-left: var(--spacing-lg);
+    margin-left: var(--spacing-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1.5rem - 8px);
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-white);
+}
+
+.timeline-year {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: var(--font-size-xs);
+    padding: 2px 10px;
+    border-radius: var(--border-radius-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline-content {
+    background-color: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow);
+}
+
+.timeline-content h3 {
+    color: var(--color-black);
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline-content p {
+    color: var(--color-gray-dark);
+    font-size: var(--font-size-sm);
+}
+
+/* Código de Ética */
+.ethics-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.ethics-card {
+    display: flex;
+    gap: var(--spacing-lg);
+    background-color: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow);
+    align-items: flex-start;
+}
+
+.ethics-number {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: var(--font-size-lg);
+    padding: 0.5rem 0.9rem;
+    border-radius: var(--border-radius-sm);
+    flex-shrink: 0;
+}
+
+.ethics-body h2 {
+    font-size: var(--font-size-lg);
+    color: var(--color-black);
+    margin-bottom: var(--spacing-xs);
+}
+
+.ethics-body p {
+    color: var(--color-gray-dark);
+    font-size: var(--font-size-sm);
+}
+
+/* Accordion FAQ (HTML5 <details>) */
+.ethics-faq {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    box-shadow: var(--box-shadow);
+}
+
+.ethics-faq summary {
+    font-weight: 700;
+    color: var(--color-black);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ethics-faq summary::after {
+    content: '+';
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.ethics-faq[open] summary::after {
+    content: '−';
+}
+
+.ethics-faq p {
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--color-gray-light);
+    color: var(--color-gray-dark);
+    font-size: var(--font-size-sm);
+}
+
+.inline-link {
+    color: var(--color-primary);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* Página de Contato */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+.contact-form-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow);
+}
+
+.contact-form-card h2 {
+    color: var(--color-black);
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+    display: block;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: var(--spacing-xs);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--color-gray-medium);
+    border-radius: var(--border-radius-sm);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-family: inherit;
+    font-size: var(--font-size-sm);
+    outline: none;
+    transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-dark);
+}
+
+.form-checkbox input {
+    margin-top: 3px;
+    accent-color: var(--color-primary);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.btn-submit:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.contact-info-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow);
+    border-top: 3px solid var(--color-primary);
+}
+
+.contact-info-card h3 {
+    color: var(--color-black);
+    margin-bottom: var(--spacing-xs);
+}
+
+.contact-info-card p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.info-list li {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-dark);
+    margin-bottom: var(--spacing-xs);
+}
+
+/* ==========================================================================
+   8. Modal em Pure CSS (:target)
    ========================================================================== */
 .modal-overlay {
     position: fixed;
@@ -469,14 +858,15 @@ body:has(#filter-eventos:checked) article:not(.eventos) {
 .btn-close-modal {
     display: inline-block;
     margin-top: var(--spacing-md);
-    padding: 0.5rem 1rem;
-    background-color: var(--color-dark);
-    color: var(--color-white);
+    padding: 0.6rem 1.2rem;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    font-weight: 700;
     border-radius: var(--border-radius-sm);
 }
 
 /* ==========================================================================
-   8. Rodapé (Footer)
+   9. Rodapé (Footer)
    ========================================================================== */
 .footer {
     background-color: #121212;
@@ -516,6 +906,12 @@ body:has(#filter-eventos:checked) article:not(.eventos) {
     cursor: pointer;
 }
 
+.footer-links a:hover,
+.footer-links a.active-footer-link {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
 .newsletter-form {
     display: flex;
     margin-top: var(--spacing-sm);
@@ -548,32 +944,50 @@ body:has(#filter-eventos:checked) article:not(.eventos) {
 }
 
 /* ==========================================================================
-   9. Responsividade & Menu Mobile (:checked)
+   10. Responsividade & Menu Mobile (:checked)
    ========================================================================== */
 .mobile-btn {
     display: none;
     padding: var(--spacing-sm) var(--spacing-md);
     color: #ffffff;
-    background-color: var(--color-dark);
+    background-color: #121212;
     font-weight: 700;
     cursor: pointer;
 }
 
 @media (max-width: 992px) {
-    .hero-card { grid-template-columns: 1fr; }
-    .news-grid { grid-template-columns: repeat(2, 1fr); }
-    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .hero-card,
+    .institutional-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-grid,
+    .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 600px) {
     .mobile-btn { display: block; }
     .nav-list { display: none; flex-direction: column; }
 
-    /* Exibe o menu mobile quando o checkbox #menu-toggle está ativo */
     body:has(#menu-toggle:checked) .nav-list {
         display: flex;
     }
 
-    .news-grid { grid-template-columns: 1fr; }
-    .footer-grid { grid-template-columns: 1fr; }
+    .news-grid,
+    .pillars-grid,
+    .form-row,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ethics-card {
+        flex-direction: column;
+    }
 }
